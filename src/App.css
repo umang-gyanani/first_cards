@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+.bg_black {
+  background: #1E1E1E;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text_gray {
+  color: #BBBBBB;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card_box {
+  background: #1E1E1E;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.max-w-224 {
+  max-width: 224px;
 }
 
-.App-link {
-  color: #61dafb;
+.card_box {
+  background: #1E1E1E;
+  padding: 20px;
+  transition: all .2s linear;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card_box:hover {
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.10) !important;
+  background: rgba(255, 255, 255, 0.10) !important;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15) !important;
+  backdrop-filter: blur(8px) !important;
+
 }
+
+.white_circle {
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: -30px;
+  right: -20px;
+  opacity: 0;
+  
+}
+
+.position-relative:hover .white_circle {
+  opacity: 1 !important;
+}
+
+
+.card_2 {
+  position: relative;
+  border: 4px solid transparent;
+  border-radius: 16px;
+  background-image: linear-gradient(to bottom right, #484848, #2c2c2c);
+  background-clip: padding-box;
+  width: 421px !important;
+  padding: 14px 106px 64px 30px;
+
+}
+
+.card_2::after {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  background-image: linear-gradient(to bottom, #FF7DFA, #FD00F3, #22A2FF, #22A2FF);
+ content: '';
+  z-index: -1;
+  border-radius: 16px;
+
+}
+.z_1{
+  z-index: 1 ;
+  position: sticky;
+  
+}
+
+.max-w-217 {
+  max-width: 217px;
+}
+
+.max-w-290 {
+  max-width: 290px;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(../src/assets/fontfamily/source-sans-pro.black.ttf);
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url(../src/assets/fontfamily/source-sans-pro.semibold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+
+h1{
+  font-family: 'Source Sans Pro';
+  font-weight: 900;
+}
+
+p{
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+}
+
+
+/* .border-gradent {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+} */
+
+/* .bg-overlay {
+    background-image: linear-gradient(to bottom right, #494949, #2C2C2C2C);
+} */
