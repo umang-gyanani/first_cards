@@ -64,7 +64,7 @@
   bottom: -4px;
   left: -4px;
   right: -4px;
-  background-image: linear-gradient(to bottom, #FF7DFA, #FD00F3, #22A2FF, #22A2FF);
+  background-image: linear-gradient(to bottom right, #FF7DFA, #FD00F3, #22A2FF, #22A2FF);
  content: '';
   z-index: -1;
   border-radius: 16px;
